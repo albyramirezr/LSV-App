@@ -1,0 +1,322 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+}
+
+.white{
+	background: #fff;
+	box-shadow: 0px 5px 8px 0px #00000024;
+}
+.contenedor{
+	width: 100%;
+	height: 100vh;
+	background: #f2f2f2;
+}
+header{
+	width: 100%;
+    background: white;
+    height: 15%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0px 5px 8px 0px #00000024;
+    background: #f2f2f2;
+}
+.main-logo{
+	height: 70%;
+}
+.center{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bienvenido{
+	font-weight: bold;
+    font-size: 18px;
+}
+.niveles{
+	height: 50%;
+}
+.niveles h4{
+	text-shadow: -1px 1px 5px #000000;
+    font-weight: bold;
+}
+.niveles p{
+	font-size: 30px;
+    margin: 0;
+    color: #333333;
+    text-shadow: -1px 1px 10px #ffffff;
+}
+.lista_categorias_nivel1{
+  margin-top: 20px;
+}
+.boton-nivel{
+	width: 100%;
+	height: 100%;
+	text-shadow: -1px 1px 5px #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: -2px 2px 8px #00000029;
+}
+.btn{
+	border-radius: 10px !important;
+}
+.fondo_azul{
+	background-image: url(./assents/pattern-blue.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondo_blanco{
+	background-image: url(./assents/pattern-white.png) !important;
+	background-color: white; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu_navegacion{
+	width: 100%;
+	height: 10%;
+	background: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	box-shadow: 0px -3px 8px 0px #00000029;
+}
+.barra_azul{
+	width: 100%;
+	height: 10%;
+	background: #69ccc2;
+	display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.barra_azul p{
+	color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+.barra_azul a{
+	width: 10%;
+}
+.flecha-atrasimg{
+  height: 20px;
+}
+.flecha_atras{
+	text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+}
+.flecha_atras:hover, .flecha_atras:focus {
+    color: #46b8da;
+    text-decoration: none;
+}
+.menu_ppal{
+	height: 100%;
+}
+.icono_menu_ppal{
+	text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+.icono_menu_ppal:hover, .icono_menu_ppal:focus {
+    color: #69ccc2;
+    text-decoration: none;
+}
+.nivel_imagen_arriba_azul{
+	width: 100%;
+	height: 25%;
+	background-image: url(./assents/pattern-blue.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boton_categoria{
+	width: 100%;
+	height: 100%;
+    font-weight: bold;
+    box-shadow: -2px 2px 8px #00000029;
+    background: white;
+}
+.boton_categoria_a{
+	width: 80%;
+    margin: 10px;
+    color: #333;
+}
+.boton_eleccion_a{
+    width: 80%;
+    margin: 10px;
+    color: #333;
+}
+.boton_siguente_a{
+    width: 100%;
+    margin: 10px;
+    color: #333;
+}
+.fas{
+    margin-left: 15px;
+}
+.boton_eleccion{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    box-shadow: -2px 2px 8px #00000029;
+}
+.main_sena{
+	width: 100%;
+    height: 60%;
+    text-align: center;
+    background: white;
+    box-shadow: -2px 2px 8px #00000029;
+}
+.main_sena img{
+	height: 100%;
+}
+.contenido_botones{
+	width: 100%;
+	height: auto;
+}
+.contenedor-scroll{
+  height: 30%;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  overflow-y: scroll;
+}
+.contenido_botones .btn{
+	color: #333;
+    background-color: #ffffff87;
+    border-color: #3333334d;
+    margin: 10px;
+}
+.contenido_botones .btn:hover, .contenido_botones .btn:focus {
+    color: #fff !important;
+    background-color: #5bc0de !important;
+    border-color: #46b8da !important;
+}
+.boton_juego1 {
+    width: 100%;
+    height: 10%;
+    background: #69ccc2;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px -3px 8px 0px #00000029;
+}
+.boton_juego{
+    width: 100%;
+    color: white;
+}
+
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 80%;
+  height: 50%;
+  margin-top: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+/* modal 2 */
+
+.modalDialog2 {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog2:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog2 > div {
+  width: 80%;
+  height: 50%;
+  margin-top: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }

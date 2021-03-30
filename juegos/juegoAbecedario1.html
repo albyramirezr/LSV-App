@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<title>Juega y aprende!</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="barra_azul">
+	         	<a href="../abecedario.html" class="flecha_atras">
+               <img src="../assents/boton-x.png" class="flecha-atrasimg">     
+                </a>
+	         	<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><p>
+	    </div> 
+	    <div class="main_sena" id="main_sena">
+	     		<img src="../assents/abecedario/rSinfondo.png" id="imagen_sena_principal" class="abecedario_senas_img">
+	    </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+            <h4>Elige la respuesta correcta</h4>
+        </div>
+	    <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+            <a href="#openModal2" class="boton_eleccion_a">
+            	<button type="button" name="button" class="btn btn-success boton_eleccion green" > 
+         			<h4>Y</h4>
+            	</button>
+            </a>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+            <a href="#openModal2" class="boton_eleccion_a">
+            	<button type="button" name="button" class="btn btn-success boton_eleccion green" > 
+         			<h4>D</h4>
+            	</button>
+            </a>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+            <a href="#openModal" class="boton_eleccion_a">
+            	<button type="button" name="button" class="btn btn-success boton_eleccion green"> 
+                    <h4>R</h4>
+            	</button>
+            </a>
+        </div>
+        <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+            <a href="#openModal2" class="boton_eleccion_a">
+            	<button type="button" name="button" class="btn btn-success boton_eleccion green"> 
+         			<h4>T</h4>
+            	</button>
+            </a>
+        </div>
+
+        <div id="openModal" class="modalDialog">
+            <div class="center">
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Felicidades</h2>
+                 <p>Juego superado</p>
+                 <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+                    <a href="#" class="boton_siguiente_a">
+                        <button type="button" name="button" class="btn btn-success boton_eleccion green"> 
+                            <h4>Siguiente<i class="fas fa-arrow-right"></i></h4>
+                        </button>
+                    </a>
+                    </div>
+            </div>
+        </div>
+
+        <div id="openModal2" class="modalDialog2">
+            <div class="center" style="text-align: center;">
+                <a href="#close" title="Close" class="close">X</a>
+                <h2>Oop intenta de nuevo!</h2>
+                 <div class="col-6 col-xs-6 col-sm-6 col-md-6 col-lg-6 center">
+                    <a href="#" class="boton_siguiente_a">
+                        <button type="button" name="button" class="btn btn-danger boton_eleccion green"> 
+                            <h4>Reintentar<i class="fas fa-arrow-right"></i></h4>
+                        </button>
+                    </a>
+                    </div>
+            </div>
+        </div>
+
+	</div>
+
+    <script type="text/javascript">
+        if(document.getElementById("btnModal")){
+            var modal = document.getElementById("tvesModal");
+            var btn = document.getElementById("btnModal");
+            var span = document.getElementsByClassName("close")[0];
+            var body = document.getElementsByTagName("body")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+
+                body.style.position = "static";
+                body.style.height = "100%";
+                body.style.overflow = "hidden";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+
+                body.style.position = "inherit";
+                body.style.height = "auto";
+                body.style.overflow = "visible";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+
+                    body.style.position = "inherit";
+                    body.style.height = "auto";
+                    body.style.overflow = "visible";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
